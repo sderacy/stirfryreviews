@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./images/stirfry-reviews-low-resolution-color-logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="responsive.js" charset="utf-8"></script>
+  <title>Stirfry Reviews Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-link topnav" id="myTopNav">
+      <ul>
+        <a class="logo-float" href="index.html"> Stirfry Reviews </a>
+        <li><a href="toppick.html">Pick of the Month</a></li>
+        <li><a href="pizzeriareviews.html">Pizzerias</a></li>
+        <li><a href="restaurantreviews.html">Restaurants</a></li>
+        <li><a href="barreviews.html">Bars</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home-img-div">
+    <div class="black-bg p-5">
+      <h1 class="text-white text-center" style="margin: 0 auto">
+        The Place for Good Tastes.
+      </h1>
+    </div>
+  </section>
+  <main>
+    <section class="contact-container">
+      <form action="action_page.php">
+        <h2 class="text-tan text-center"> Contact Me! </h2>
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Jane Doe" autocomplete="name" required>
+
+        <label for="lname">Email Address</label>
+        <input type="text" id="lname" name="lastname" placeholder="jdoe@gmail.com" autocomplete="email" required>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Tell Stirfry your story..." style="height:200px"></textarea>
+        <div class="text-center">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- Don't forget the milk... -->
+  <footer class="homeFooter">
+    <div class="ml-2">
+      © 2023 Stirfry Reviews
+    </div>
+    <div class="mr-2">
+      <a href="https://www.linkedin.com/in/sterlyderacy/" target="_blank"><i class="fa fa-linkedin-square"
+          aria-hidden="true"></i></a>
+      <a href="https://github.com/sderacy" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      <a href="https://www.sderacy.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
