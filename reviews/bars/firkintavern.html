@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../../responsive.js" charset="utf-8"></script>
-  <title>Bars - Firkin Tavern</title>
+  <script src="../../index.js" charset="utf-8"></script>
+  <title id="docTitle">Firkin Tavern</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <li><a href="../../barreviews.html">Bars</a></li>
         <li><a href="../../about.html">About</a></li>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
             <i class="fa fa-bars"></i>
           </a>
         </li>
@@ -31,8 +31,8 @@
   </header>
   <main>
     <section class="container mt-5">
-      <h2 class="text-center text-tan">Bars - Firkin Tavern</h2>
-
+      <h1 class="text-center text-tan"><a class="category-link" href="../../barreviews.html">Bars / </a> Firkin Tavern
+      </h1>
       <aside class="text-center">
         <p> 1400 Parkway Ave, Ewing Township, NJ 08628 &#x2022; <a class="text-tan" href="https://firkintavern.com/">
             https://firkintavern.com/</a>
@@ -51,15 +51,15 @@
             </tr>
             <tr>
               <td>Service</td>
-              <td><span class="tomato">&#9733;&#9733;</span>&#9733;&#9733;&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
             </tr>
             <tr>
               <td>Food</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
             </tr>
             <tr>
               <td>Color Combination</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
             </tr>
             <tr>
               <td>Visual Appeal</td>
@@ -67,7 +67,7 @@
             </tr>
             <tr>
               <td>Freshness</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
             </tr>
           </table>
         </div>
@@ -102,6 +102,10 @@
             with good food and drinks.</p>
           <p>- Stirfry</p>
         </article>
+        <div class="nextreview">
+          <a class="text-center" href="#" onclick="getReview(false)">&larr; Read Previous Review</a>
+          <a href="#" onclick="getReview(true)">Read Next Review &rarr;</a>
+        </div>
       </div>
     </section>
   </main>

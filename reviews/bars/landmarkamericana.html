@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../../responsive.js" charset="utf-8"></script>
-  <title>Bars - Landmark Americana</title>
+  <script src="../../index.js" charset="utf-8"></script>
+  <title id="docTitle">Landmark Americana</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <li><a href="../../barreviews.html">Bars</a></li>
         <li><a href="../../about.html">About</a></li>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
             <i class="fa fa-bars"></i>
           </a>
         </li>
@@ -31,7 +31,8 @@
   </header>
   <main>
     <section class="container mt-5">
-      <h2 class="text-center text-tan">Bars - Landmark Americana</h2>
+      <h1 class="text-center text-tan"><a class="category-link" href="../../barreviews.html">Bars / </a> Landmark
+        Americana</h1>
 
       <aside class="text-center">
         <p> 1 Mullica Hill Rd, Glassboro, NJ 08028 &#x2022; <a class="text-tan"
@@ -52,11 +53,11 @@
             </tr>
             <tr>
               <td>Service</td>
-              <td><span class="tomato">&#9733;&#9733;</span>&#9733;&#9733;&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
             </tr>
             <tr>
               <td>Food</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
             </tr>
             <tr>
               <td>Color Combination</td>
@@ -101,6 +102,11 @@
             out with friends or a place to catch the game, this spot has something for everyone.</p>
           <p>- Stirfry</p>
         </article>
+
+        <div class="nextreview">
+          <a class="text-center" href="#" onclick="getReview(false)">&larr; Read Previous Review</a>
+          <a href="#" onclick="getReview(true)">Read Next Review &rarr;</a>
+        </div>
       </div>
     </section>
   </main>

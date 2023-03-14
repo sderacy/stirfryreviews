@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../../responsive.js" charset="utf-8"></script>
-  <title>Bars - The Drake Pub</title>
+  <script src="../../index.js" charset="utf-8"></script>
+  <title id="docTitle">The Drake Pub</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <li><a href="../../barreviews.html">Bars</a></li>
         <li><a href="../../about.html">About</a></li>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
             <i class="fa fa-bars"></i>
           </a>
         </li>
@@ -31,7 +31,8 @@
   </header>
   <main>
     <section class="container mt-5">
-      <h2 class="text-center text-tan">Bars - The Drake Pub</h2>
+      <h1 class="text-center text-tan"><a class="category-link" href="../../barreviews.html">Bars / </a> The Drake Pub
+      </h1>
 
       <aside class="text-center">
         <p> 909 Railway Ave, Canmore, AB T1W 1P3, Canada &#x2022; <a class="text-tan"
@@ -50,7 +51,7 @@
             </tr>
             <tr>
               <td>Service</td>
-              <td><span class="tomato">&#9733;&#9733;</span>&#9733;&#9733;&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
             </tr>
             <tr>
               <td>Food</td>
@@ -58,7 +59,7 @@
             </tr>
             <tr>
               <td>Color Combination</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
             </tr>
             <tr>
               <td>Visual Appeal</td>
@@ -66,7 +67,7 @@
             </tr>
             <tr>
               <td>Freshness</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
             </tr>
           </table>
         </div>
@@ -101,6 +102,13 @@
             a twist, you&#39;re sure to find something that you&#39;ll love at this charming Toronto pub.</p>
           <p>- Stirfry</p>
         </article>
+
+        <div class="nextreview">
+          <a class="fa fa-book" href="https://www.opentable.ca/restref/client/?rid=1076719&restref=1076719"
+            target="_blank"> Book a Reservation</a>
+          <a class="text-center" href="#" onclick="getReview(false)">&larr; Read Previous Review</a>
+          <a href="#" onclick="getReview(true)">Read Next Review &rarr;</a>
+        </div>
       </div>
 
     </section>

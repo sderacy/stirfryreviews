@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../../responsive.js" charset="utf-8"></script>
-  <title>Pizzerias - King's Pizzarama</title>
+  <script src="../../index.js" charset="utf-8"></script>
+  <title id="docTitle">King's Pizzarama</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <li><a href="../../barreviews.html">Bars</a></li>
         <li><a href="../../about.html">About</a></li>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
             <i class="fa fa-bars"></i>
           </a>
         </li>
@@ -31,7 +31,8 @@
   </header>
   <main>
     <section class="container mt-5">
-      <h2 class="text-center text-tan">Pizzerias - King's Pizzarama</h2>
+      <h1 class="text-center text-tan"><a class="category-link" href="../../pizzareviews.html">Pizzerias / </a> King's
+        Pizzarama</h1>
 
       <aside class="text-center">
         <p> 200 Ewingville Rd, Ewing Township, NJ 08638 &#x2022; <a class="text-tan"
@@ -51,19 +52,19 @@
             </tr>
             <tr>
               <td>Service</td>
-              <td><span class="tomato">&#9733;&#9733;</span>&#9733;&#9733;&#9733;</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
             </tr>
             <tr>
               <td>Food</td>
-              <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
-            </tr>
-            <tr>
-              <td>Color Combination</td>
               <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
             </tr>
             <tr>
-              <td>Visual Appeal</td>
+              <td>Color Combination</td>
               <td><span class="tomato">&#9733;&#9733;&#9733;</span>&#9733;&#9733;</td>
+            </tr>
+            <tr>
+              <td>Visual Appeal</td>
+              <td><span class="tomato">&#9733;&#9733;&#9733;&#9733;</span>&#9733;</td>
             </tr>
             <tr>
               <td>Freshness</td>
@@ -102,6 +103,11 @@
             cuisine. It&#39;s a local gem that&#39;s definitely worth a visit.</p>
           <p>- Stirfry</p>
         </article>
+
+        <div class="nextreview">
+          <a class="text-center" href="#" onclick="getReview(false)">&larr; Read Previous Review</a>
+          <a href="#" onclick="getReview(true)">Read Next Review &rarr;</a>
+        </div>
       </div>
     </section>
   </main>

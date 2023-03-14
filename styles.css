@@ -501,3 +501,46 @@ footer {
   justify-content: flex-start;
   width: 75%;
 }
+
+.category-link {
+  color: #fffbff;
+  /* text-decoration-line: #fffbff; */
+  text-decoration: none;
+}
+
+.category-link:hover {
+  color: #f1dabf;
+}
+
+.nextreview {
+  /* 	border-top: 1px dashed orange; */
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.nextreview a:link {
+  color: #f1dabf;
+}
+
+.nextreview a:visited {
+  color: #f1dabf;
+}
+
+.nextreview a {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.nextreview a:hover {
+  color: #2b1800;
+  background-color: #fffbff;
+}
+
+@media (max-width: 800px) {
+  .nextreview {
+    flex-direction: column;
+  }
+}

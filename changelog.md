@@ -3,6 +3,21 @@ _Food Review Site that looks at bars, pizzerias, and other various restaurants a
 * __Sterly Deracy__ - <deracys1@tcnj.edu>
 
 ---
+### 2023-03-21
+- ADDED: Make reservation button
+- ADDED: Next review button
+- ADDED: FA icon for reservation link
+- CHANGED: h2 tags to h1 for titles on review pages
+- ADDED: Functionality to see next review
+- ADDED: Prev review button
+- ADDED: Functionality to see previous reviews
+- CHANGED: Reponsive.js to index.js since it encompasses more logic now
+- ADDED: Ability to go to root category page for each review page
+- ADDED: Change first review of each set to say "Read Last Review" instead of "Read Previous Review"
+- ADDED: Change first review of each set to say "Read First Review" instead of "Read Next Review"
+- CHANGED: CV download button to be actually functional
+
+
 ### 2023-03-07
 - ADDED: FA icons to the site, specifically the footer
 - ADDED: links to each fa icon
