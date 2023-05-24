@@ -6,36 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../images/stirfrylogo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../../index.js" charset="utf-8"></script>
-  <title id="docTitle">Mamma Flora's Trattoria</title>
+  <script src="../../index.js"></script>
+  <title id="docTitle">Stirfry Reviews - Mamma Flora's Trattoria</title>
 </head>
 
 <body>
   <header>
     <nav class="nav-link topnav" id="myTopNav">
+      <a class="logo-float" href="../../index.html">Stirfry Reviews</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
       <ul>
-        <a class="logo-float" href="index.html"> Stirfry Reviews </a>
-        <li><a href="../../toppick.html">Pick of the Month</a></li>
-        <li><a href="../../pizzeriareviews.html">Pizzerias</a></li>
-        <li><a href="../../restaurantreviews.html">Restaurants</a></li>
-        <li><a href="../../barreviews.html">Bars</a></li>
-        <li><a href="../../about.html">About</a></li>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </li>
+        <li><a href="../../about.html">About</a></li>
+        <li><a href="../../barreviews.html">Bars</a></li>
+        <li><a href="../../restaurantreviews.html">Restaurants</a></li>
+        <li><a href="../../pizzeriareviews.html">Pizzerias</a></li>
+        <li><a href="../../toppick.html">Pick of the Month</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="container mt-5">
-      <h1 class="text-center text-tan"><a class="category-link" href="../../pizzeriaeviews.html">Pizzerias / </a> Mamma
+      <h1 class="text-center text-tan"><a class="category-link" href="../../pizzeriareviews.html">Pizzerias</a> <i
+          class="fa fa-arrow-right" aria-hidden="true"></i> Mamma
         Flora's Trattoria</h1>
 
       <aside class="text-center">
-        <p> 1750 N Olden Ave, Ewing Township, NJ 08638 &#x2022; <a class="text-tan" href="mammaflorastrattoria.com">
+        <p> 1750 N Olden Ave, Ewing Township, NJ 08638 &#x2022; <a class="text-tan"
+            href="https://www.mammaflorastrattoria.com">
             mammaflorastrattoria.com</a>
         </p>
       </aside>
@@ -82,8 +84,8 @@
 
 
         <article class="review-content flex-container-vertical pl-2 w-75 ">
-          <p>May 15, 2023</p>
-          <h3 class="mb-2 text-tan">Mother of All Ewing Pizzerias </h3>
+          <p class="text-tan">December 1, 2022</p>
+          <h3 class=" mb-2 text-tan fancy-font">Mother of All Ewing Pizzerias </h3>
           <p>If you&#39;re looking for authentic Italian-style pizza, Mamma Flora&#39;s Trattoria is the place to go.
             This cozy pizzeria is a hidden gem that&#39;s definitely worth seeking out. The moment you step inside,
             you&#39;re transported to Italy with its rustic decor and warm, welcoming atmosphere.</p>
@@ -104,18 +106,20 @@
         </article>
 
         <div class="nextreview">
-          <a class="text-center" href="#" onclick="getReview(false)">&larr; Read Last Review</a>
-          <a href="#" onclick="getReview(true)">Read Next Review &rarr;</a>
+          <a class="text-center" href="#" onclick="getReview(false)"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Read Last Review</a>
+          <a href="#" onclick="getReview(true)">Read Next Review <i class="fa fa-arrow-right"
+              aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
   </main>
   <!-- Don't forget the milk... -->
   <footer class="homeFooter">
-    <div class="ml-2">
+    <div class="ml-2 footer-copyright">
       © 2023 Stirfry Reviews
     </div>
-    <div class="mr-2">
+    <div class="mr-2 footer-icons">
       <a href="https://www.linkedin.com/in/sterlyderacy/" target="_blank"><i class="fa fa-linkedin-square"
           aria-hidden="true"></i></a>
       <a href="https://github.com/sderacy" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>

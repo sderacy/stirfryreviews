@@ -6,32 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../images/stirfrylogo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../../index.js" charset="utf-8"></script>
-  <title id="docTitle">The Drake Pub</title>
+  <script src="../../index.js"></script>
+  <title id="docTitle">Stirfry Reviews - The Drake Pub</title>
 </head>
 
 <body>
   <header>
     <nav class="nav-link topnav" id="myTopNav">
+      <a class="logo-float" href="../../index.html">Stirfry Reviews</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
       <ul>
-        <a class="logo-float" href="index.html"> Stirfry Reviews </a>
-        <li><a href="../../toppick.html">Pick of the Month</a></li>
-        <li><a href="../../pizzeriareviews.html">Pizzerias</a></li>
-        <li><a href="../../restaurantreviews.html">Restaurants</a></li>
-        <li><a href="../../barreviews.html">Bars</a></li>
-        <li><a href="../../about.html">About</a></li>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </li>
+        <li><a href="../../about.html">About</a></li>
+        <li><a href="../../barreviews.html">Bars</a></li>
+        <li><a href="../../restaurantreviews.html">Restaurants</a></li>
+        <li><a href="../../pizzeriareviews.html">Pizzerias</a></li>
+        <li><a href="../../toppick.html">Pick of the Month</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="container mt-5">
-      <h1 class="text-center text-tan"><a class="category-link" href="../../barreviews.html">Bars / </a> The Drake Pub
+      <h1 class="text-center text-tan"><a class="category-link" href="../../barreviews.html">Bars</a> <i
+          class="fa fa-arrow-right" aria-hidden="true"></i> The Drake Pub
       </h1>
 
       <aside class="text-center">
@@ -81,8 +82,8 @@
 
 
         <article class="review-content flex-container-vertical pl-2 w-75 ">
-          <p>May 15, 2023</p>
-          <h3 class="mb-2 text-tan">The Canadian Jewel </h3>
+          <p class="text-tan">November 12, 2019</p>
+          <h3 class=" mb-2 text-tan fancy-font">The Canadian Jewel </h3>
           <p>I recently visited The Drake Pub and was impressed with both the atmosphere and the food. Located in
             Toronto, Canada, this cozy neighborhood pub offers a welcoming and laid-back vibe that makes it a great
             spot to grab a drink or a bite to eat.</p>
@@ -104,10 +105,12 @@
         </article>
 
         <div class="nextreview">
-          <a class="fa fa-book" href="https://www.opentable.ca/restref/client/?rid=1076719&restref=1076719"
-            target="_blank"> Book a Reservation</a>
-          <a class="text-center" href="#" onclick="getReview(false)">&larr; Read Previous Review</a>
-          <a href="#" onclick="getReview(true)">Read Next Review &rarr;</a>
+          <a class="text-center" href="#" onclick="getReview(false)"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Read Previous Review</a>
+          <a href="https://www.opentable.ca/restref/client/?rid=1076719&restref=1076719" target="_blank"> <i
+              class="fa fa-book" aria-hidden="true"></i> Book a Reservation</a>
+          <a href="#" onclick="getReview(true)">Read Next Review <i class="fa fa-arrow-right"
+              aria-hidden="true"></i></a>
         </div>
       </div>
 
@@ -115,10 +118,10 @@
   </main>
   <!-- Don't forget the milk... -->
   <footer class="homeFooter">
-    <div class="ml-2">
+    <div class="ml-2 footer-copyright">
       © 2023 Stirfry Reviews
     </div>
-    <div class="mr-2">
+    <div class="mr-2 footer-icons">
       <a href="https://www.linkedin.com/in/sterlyderacy/" target="_blank"><i class="fa fa-linkedin-square"
           aria-hidden="true"></i></a>
       <a href="https://github.com/sderacy" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>

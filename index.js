@@ -57,12 +57,13 @@ function toggleMobileMenu() {
 }
 
 function getReview(isNext) {
-  let pageName = document.getElementById("docTitle").innerText;
-  let barIndex = bars.indexOf(pageName);
-  let pizzaIndex = pizzerias.indexOf(pageName);
-  let restaurantIndex = restaurants.indexOf(pageName);
+  let rawPageName = document.getElementById("docTitle").innerText;
+  let pageName = rawPageName.split(" - ");
+  let barIndex = bars.indexOf(pageName[1]);
+  let pizzaIndex = pizzerias.indexOf(pageName[1]);
+  let restaurantIndex = restaurants.indexOf(pageName[1]);
 
-  console.log(pageName + "-" + barIndex);
+  console.log(pageName[1] + "-" + barIndex);
   if (barIndex != -1) {
     if (isNext) {
       nextReview(barPages, barIndex);
@@ -99,4 +100,34 @@ function prevReview(reviewSet, index) {
   } else {
     window.location.href = "./" + reviewSet[reviewSet.length - 1];
   }
+}
+
+let submitButton = document.getElementById("submitButton");
+
+function checkEnableButton() {
+  let fullName = document.getElementById("name");
+  let email = document.getElementById("email");
+  let subject = document.getElementById("subject");
+
+  if (
+    fullName.value &&
+    email.value &&
+    subject.value
+  ) {
+    submitButton.classList.remove("disabled")
+  } else {
+    if (!submitButton.classList.contains("disabled")) {
+      submitButton.classList.add("disabled");
+    }
+  }
+}
+
+if (document.URL.includes("index.html")) {
+  submitButton.addEventListener('click', function () {
+    if (!submitButton.classList.contains("disabled")) {
+      alert("Email sent successfully! Redirecting...")
+      submitButton.classList.add("disabled");
+    }
+  }
+  )
 }

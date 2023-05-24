@@ -7,6 +7,11 @@
 /* Playfair? */
 /* Inter */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 /* General Styling */
 h1,
 h2,
@@ -32,6 +37,10 @@ body {
   height: 100vh;
 }
 
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -39,6 +48,7 @@ main {
 
 p {
   color: #fffbff;
+  line-height: 1.5rem;
 }
 
 a:hover,
@@ -47,10 +57,16 @@ a:active {
   color: #fffbff;
 }
 
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo-float {
-  display: block;
+  /* 	display: block; */
   padding: 14px 7px;
-  float: left;
+  /*   float: left; */
   font-size: large;
   text-decoration: none;
 }
@@ -62,6 +78,19 @@ a:active {
 
 .logo-float:hover {
   color: #fffbff;
+}
+
+.fancy-font {
+  font-family: "Lobster", 'Brush Script MT', cursive;
+  letter-spacing: 0.07em;
+}
+
+h1.fancy-font {
+  font-size: 2rem;
+}
+
+h3.fancy-font {
+  font-size: 1.5rem;
 }
 
 /* Nav */
@@ -80,7 +109,7 @@ nav ul {
 }
 
 nav li {
-  float: right;
+  /*   float: right; */
   display: inline;
 }
 
@@ -89,7 +118,7 @@ nav li a:hover {
 }
 
 nav a {
-  display: block;
+  /*   display: block; */
   color: #f1dabf;
   text-align: center;
   padding: 14px 10px;
@@ -107,12 +136,16 @@ nav {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 685px) {
+  ul {
+    display: none;
+  }
+
   nav>ul>li>a {
     display: none;
   }
 
-  nav>ul>li>a.icon {
+  nav>a.icon {
     float: right;
     display: inline;
   }
@@ -120,11 +153,22 @@ nav {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
+  nav>.logo-float {
+    display: flex;
+    order: 2;
+  }
+
   nav.topnav.responsive {
     position: relative;
   }
 
-  nav.topnav.responsive>ul>li>a.icon {
+  nav.topnav>a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav.topnav.responsive>a.icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -132,25 +176,27 @@ nav {
 
   nav.topnav.responsive>ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
   }
 
-  nav.topnav.responsive>ul>.logo-float {
+  nav.topnav.responsive>.logo-float {
     display: flex;
     order: 2;
   }
 
   nav.topnav.responsive>ul>li {
     display: block;
-    float: none;
-    clear: both;
   }
 
   nav.topnav.responsive>ul>li>a {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  header nav {
+    display: block;
   }
 }
 
@@ -288,6 +334,64 @@ nav {
   background-size: cover;
 }
 
+.fade-in-image {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .black-bg {
   background-color: rgba(4, 3, 15, 0.8);
   position: relative;
@@ -313,15 +417,33 @@ nav {
   height: 300px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  /* Animation */
+  transition: transform .2s;
+}
+
+.grid-container>div>a>img:hover {
+  transform: scale(1.05);
+}
+
+.mobile-btn {
+  visibility: hidden;
 }
 
 @media (max-width: 650px) {
   .grid-container {
     display: block;
   }
+
+  .mobile-btn {
+    visibility: visible;
+  }
 }
 
 /* Contact form */
+.req-asterisk {
+  color: red;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -335,8 +457,8 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"],
-button {
+button,
+.button {
   font-size: 1.1rem;
   text-align: center;
   background-color: #594e4a;
@@ -347,9 +469,20 @@ button {
   cursor: pointer;
 }
 
-input[type="submit"]:hover,
-button:hover {
+button:hover,
+.button:hover {
   background-color: #867771;
+}
+
+button.disabled,
+.button.disabled {
+  background-color: #433b38;
+  color: #777;
+  cursor: default;
+}
+
+.button {
+  text-decoration: none;
 }
 
 label {
@@ -362,6 +495,10 @@ label {
   padding: 20px;
   width: 50%;
   margin: auto;
+}
+
+form>textarea {
+  height: 200px;
 }
 
 /* Footer */
@@ -386,8 +523,21 @@ footer {
   justify-content: space-between;
 }
 
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
 i {
-  font-size: 1.3rem !important;
+  font-size: 1.6rem !important;
 }
 
 a i {
@@ -503,17 +653,14 @@ footer {
 }
 
 .category-link {
-  color: #fffbff;
-  /* text-decoration-line: #fffbff; */
-  text-decoration: none;
-}
-
-.category-link:hover {
   color: #f1dabf;
 }
 
+.category-link:hover {
+  color: #fffbff;
+}
+
 .nextreview {
-  /* 	border-top: 1px dashed orange; */
   padding: 4rem;
   display: flex;
   flex-direction: row;
@@ -532,11 +679,17 @@ footer {
   border: 1px solid white;
   padding: 1rem;
   margin: 0.5rem;
+  text-align: center;
 }
 
 .nextreview a:hover {
   color: #2b1800;
   background-color: #fffbff;
+
+}
+
+.nextreview a:hover>i {
+  color: #2b1800;
 }
 
 @media (max-width: 800px) {

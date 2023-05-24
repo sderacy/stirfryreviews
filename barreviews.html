@@ -6,58 +6,74 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./images/stirfrylogo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="index.js" charset="utf-8"></script>
-  <title>Stirfry Bar Reviews</title>
+  <script src="index.js"></script>
+  <title>Stirfry Reviews - Bar Reviews</title>
 </head>
 
 <body>
   <header>
     <nav class="nav-link topnav" id="myTopNav">
+      <a class="logo-float" href="index.html">Stirfry Reviews</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
       <ul>
-        <a class="logo-float" href="index.html"> Stirfry Reviews </a>
-        <li><a href="toppick.html">Pick of the Month</a></li>
-        <li><a href="pizzeriareviews.html">Pizzerias</a></li>
-        <li><a href="restaurantreviews.html">Restaurants</a></li>
-        <li><a href="barreviews.html">Bars</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="barreviews.html">Bars</a></li>
+        <li><a href="restaurantreviews.html">Restaurants</a></li>
+        <li><a href="pizzeriareviews.html">Pizzerias</a></li>
+        <li><a href="toppick.html">Pick of the Month</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="mt-5">
-      <h1 class="text-center text-tan mb-3"> Top Bar Reviews </h1>
+      <h1 class="text-center text-tan fancy-font mb-3"> Top Bar Reviews </h1>
       <div class="flex-container-center">
-        <div class="grid-container">
-          <div class="item"><a href="./reviews/bars/earlkitchen_bar.html"><img alt="Earl's Kitchen Sushi"
-                src="./images/bars/earlskitchensushi.png"></a></div>
-          <div class="item"><a href="./reviews/bars/drakepub.html"><img alt="Drake Pub's Fish and Chips"
+        <div class="grid-container text-center">
+          <div class="item">
+            <h3>Earl's Kitchen + Bar</h3><a href="./reviews/bars/earlkitchen_bar.html"><img alt="Earl's Kitchen Sushi"
+                src="./images/bars/earlskitchensushi.png"></a>
+            <a class="button mobile-btn" href="./reviews/bars/earlkitchen_bar.html"> Click me! </a>
+          </div>
+          <div class="item">
+            <h3>Drake Pub</h3><a href="./reviews/bars/drakepub.html"><img alt="Drake Pub's Fish and Chips"
                 src="./images/bars/drakepubfishchips.jpg"></a>
+            <a class="button mobile-btn" href="./reviews/bars/drakepub.html"> Click me! </a>
           </div>
-          <div class="item"><a href="./reviews/bars/alsairportinn.html"><img alt="Al's Airport Inn Burgers"
-                src="./images/bars/alairportinngrill.jpg"></a></div>
-          <div class="item"><a href="./reviews/bars/firkintavern.html"><img alt="Firkin Tavern Nachos"
+          <div class="item">
+            <h3>Al's Airport Inn</h3><a href="./reviews/bars/alsairportinn.html"><img alt="Al's Airport Inn Burgers"
+                src="./images/bars/alairportinngrill.jpg"></a>
+            <a class="button mobile-btn" href="./reviews/bars/alsairportinn.html"> Click me! </a>
+          </div>
+          <div class="item">
+            <h3>Firkin Tavern</h3><a href="./reviews/bars/firkintavern.html"><img alt="Firkin Tavern Nachos"
                 src="./images/bars/firkinnachos.jpg"></a>
+            <a class="button mobile-btn" href="./reviews/bars/firkintavern.html"> Click me! </a>
           </div>
-          <div class="item"><a href="./reviews/bars/landmarkamericana.html"><img
-                alt="Landmark Americana's Landmark Burger" src="./images/bars/landmarkamericana.jpg"></a></div>
-          <div class="item"><a href="./reviews/bars/stout.html"><img alt="Stout NYC's Stout Burger"
-                src="./images/bars/stoutburger.jpg"></a></div>
+          <div class="item">
+            <h3>Landmark Americana</h3><a href="./reviews/bars/landmarkamericana.html"><img
+                alt="Landmark Americana's Landmark Burger" src="./images/bars/landmarkamericana.jpg"></a>
+            <a class="button mobile-btn" href="./reviews/bars/landmarkamericana.html"> Click me! </a>
+          </div>
+          <div class="item">
+            <h3>Stout NYC</h3><a href="./reviews/bars/stout.html"><img alt="Stout NYC's Stout Burger"
+                src="./images/bars/stoutburger.jpg"></a>
+            <a class="button mobile-btn" href="./reviews/bars/stout.html"> Click me! </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <!-- Don't forget the milk... -->
   <footer class="homeFooter">
-    <div class="ml-2">
+    <div class="ml-2 footer-copyright">
       © 2023 Stirfry Reviews
     </div>
-    <div class="mr-2">
+    <div class="mr-2 footer-icons">
       <a href="https://www.linkedin.com/in/sterlyderacy/" target="_blank"><i class="fa fa-linkedin-square"
           aria-hidden="true"></i></a>
       <a href="https://github.com/sderacy" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
